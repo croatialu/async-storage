@@ -1,17 +1,17 @@
 {
-  "name": "starter-ts",
-  "version": "1.0.0",
+  "name": "@croatialu/async-storage",
+  "version": "0.0.0",
   "packageManager": "pnpm@7.10.0",
   "description": "",
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/<github name>/<repo name>#readme",
+  "homepage": "https://github.com/CroatiaParanoia/async-storage#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<github name>/<repo name>.git"
+    "url": "git+https://github.com/CroatiaParanoia/async-storage.git"
   },
   "bugs": {
-    "url": "https://github.com/<github name>/<repo name>/issues"
+    "url": "https://github.com/CroatiaParanoia/async-storage/issues"
   },
   "keywords": [],
   "exports": {

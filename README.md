@@ -1,15 +1,37 @@
-# start-ts
+# async-storage
+
+Asynchronous storage/config/redis... operation
 
 
-## 使用
-1. 点击右上角 `Use this template`
-2. 页面中输入仓库名
-3. 拉取仓库本地
-4. 修改 `package.json` 中的 `repository`、`bugs` 和 `homepage` 字段
-5. 安装依赖 
+## Useage
 
 
-## 功能
-pnpm 管理，更快的包安装速度
+### basic
+remote, API server, redis, or db, etc...,
 
+``` typescript
 
+import { createAsyncStorage } from '@croatialu/async-storage'
+
+interface RemoteStorageTypes {
+  user: { name: string, age: string, gender: 'male' | 'female' }
+}
+
+const RemoteStorage = createAsyncStorage({
+  async set(key, value){
+    return apiServer.post('/api/user-storage', { key, value })
+  }
+  async get(key){
+    return apiServer.get('/api/user-storage')
+  }
+})
+
+const remoteStorage = new RemoteStorage<RemoteStorageTypes>()
+
+remoteStorage.set('user', { name: 'croatia', age: 23, gender: 'male' })
+
+remoteStorage.set('user', (oldUser) => {
+  return { ...oldUser, age: 24 }
+})
+
+```
