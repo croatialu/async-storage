@@ -22,6 +22,7 @@ export default defineConfig({
     {
       compilerOptions: {
         declaration: false,
+        declarationDir: undefined,
       },
     },
   )],
