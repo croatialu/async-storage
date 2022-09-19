@@ -72,5 +72,8 @@
     "**/*.ts": [
       "pnpm run format"
     ]
+  },
+  "dependencies": {
+    "await-to-js": "^3.0.0"
   }
 }
