@@ -9,7 +9,7 @@
 </p>
 
 
-Asynchronous storage/config/redis... operation
+An asynchronous storage tool
 
 
 ## Useage
