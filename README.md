@@ -1,6 +1,12 @@
 # async-storage
 
-[![NPM version](https://img.shields.io/npm/v/@croatialu/async-storage?color=a1b858&label=)](https://www.npmjs.com/package/@croatialu/async-storage)
+<p align="center">
+  <img src="https://img.shields.io/github/workflow/status/CroatiaParanoia/async-storage/CI.svg?sanitize=true" alt="Build Status">
+  <!-- <img src="https://img.shields.io/codecov/c/github/CroatiaParanoia/async-storage/master.svg?sanitize=true" alt="Coverage Status"> -->
+  <img src="https://img.shields.io/npm/dm/@croatialu/async-storage.svg?sanitize=true" alt="Downloads">
+  <img src="https://img.shields.io/npm/v/@croatialu/async-storage.svg?sanitize=true" alt="Version">
+  <img src="https://img.shields.io/npm/l/@croatialu/async-storage.svg?sanitize=true" alt="License">
+</p>
 
 
 Asynchronous storage/config/redis... operation
@@ -38,3 +44,8 @@ remoteStorage.set('user', (oldUser) => {
 })
 
 ```
+
+
+## License
+
+[MIT](./LICENSE) License © 2022 [croatialu](https://github.com/CroatiaParanoia)

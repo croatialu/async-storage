@@ -48,6 +48,9 @@
     "clean": "rimraf dist types",
     "prepare": "husky install"
   },
+  "dependencies": {
+    "await-to-js": "^3.0.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.26.3",
     "@commitlint/cli": "^17.1.2",
@@ -72,8 +75,5 @@
     "**/*.ts": [
       "pnpm run format"
     ]
-  },
-  "dependencies": {
-    "await-to-js": "^3.0.0"
   }
 }
